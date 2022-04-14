@@ -1,0 +1,346 @@
+/* ----------------------------------------------------------------------------------  */
+/* Aquí inicia el CSS para el Body, Cabecera y Pie de Página generalizado de los HTML */
+/* --------------------------------------------------------------------------------  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0px;
+}
+
+.caja {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c78c19;  
+    text-decoration: underline;
+}
+
+footer {
+    background: url(../imgs/productos/bg.jpg);
+    padding: 40px;
+    text-align: center;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* ---------------------------------------- */
+/* Aquí inicia el CSS para la página Home  */
+/* -------------------------------------- */
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    background: #FEFEFE;
+    margin: 0px auto;
+    padding: 3em 0;
+    width: 940px;
+}
+
+.titulo-principal {
+    clear: left;
+    font-size: 2em;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 120px;
+}
+
+.mapa {
+    background: linear-gradient(#FEFEFE, #888888);
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.diferenciales {
+    background: #888888;
+    padding: 3em 0;
+}
+
+.contenido-diferenciales {
+    margin: 0 auto;
+    width: 640px;
+}
+
+.lista-diferenciales {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items::before {
+    content: "★";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    box-shadow: 10px 10px 30px 15px #000000;
+    transition: 400ms;
+    width: 60%;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 0.3;
+}
+
+.video {
+    margin: 1em auto;
+    width: 560px;
+}
+
+/* ----------------------------------------------- */
+/* Aquí inicia el CSS para la página de Productos */
+/* --------------------------------------------- */
+
+.productos {
+    margin: 0 auto;
+    padding: 50px;
+    width: 940px;
+}
+
+.productos li {
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    text-align: center;
+    vertical-align: top;
+    width: 30%;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------  */
+/* Aquí inicia el CSS para la página de Contacto    */
+/* ----------------------------------------------- */
+
+.formulario-contacto {
+    margin: 5px 25% 5px 25%;
+}
+
+form {
+    margin: 40px 0 50px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 25%;
+}
+
+form textarea {
+    resize: none;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px 25%;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.input-padron:hover {
+    border-color: blueviolet;
+}
+
+.input-padron:focus {
+    border-color: orange;
+    outline: 0 none;
+}
+
+.leyenda_opciones-horario {
+    margin-top: 15px;
+}
+.opciones-horario {
+    margin: 5px 0 0 25%;
+}
+
+.checkbox {
+    margin: 20px 0 0 25%;
+}
+
+.enviar {
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 20px;
+    padding: 15px 0;
+    transition: 1s all;
+    width: 40%;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 0px 25% 40px 39%;
+    padding: 0;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* --------------------------------------------------  */
+/* Aquí se usa el CSS para el manejo de Media Queries */
+/* ------------------------------------------------- */
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+    .imagen-diferenciales, .video {
+        margin-top: 20px;
+    }
+    .productos {
+        padding: 50px;
+        width: auto;
+    }
+    .productos li {
+        align-items: center;
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .formulario-contacto {
+        margin: auto;
+        width: 100%;
+    }
+    form {
+        margin: 20px auto;
+    }
+    form label, form legend {
+        margin: 15px 25% 5px 10%;
+    }
+    .input-padron {
+        border-color: #555555;
+        margin: 10px 0px 15px 30px;
+        width: 70%;
+    }
+    .checkbox {
+        margin: 20px 0 0 40px;
+        width: 80%;
+    }
+    .enviar {
+        margin-left: 24%;
+        margin-top: 35px;
+        width: 50%;
+    }
+    table {
+        margin: 40px 0 65px 20%;
+    }
+}
